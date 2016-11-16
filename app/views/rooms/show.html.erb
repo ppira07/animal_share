@@ -1,11 +1,11 @@
-
-<h1>Chat room</h1>
-
-<div id="messages">
-  <%= render @messages %>
+<div class="chat_home">
+  <div class="ichiran">
+    <div id="messages">
+      <%= render @messages %>
+    </div>
+    
+  </div>
+  <form>
+    <input type="text" data-behavior="room_speaker">
+  </form>
 </div>
-
-<form>
-  <label>Say something:</label><br>
-  <input type="text" data-behavior="room_speaker">
-</form>
